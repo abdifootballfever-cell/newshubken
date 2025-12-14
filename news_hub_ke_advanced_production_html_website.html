@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewsHubKE – Trusted African News</title>
+  <meta name="description" content="Breaking news, politics, entertainment, sports and investigations from Kenya and across Africa." />
+
+  <!-- SEO / Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NewsHubKE – Trusted African News" />
+  <meta property="og:description" content="Independent, fast and reliable news across Africa." />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #0b5ed7;
+      --dark: #111827;
+      --gray: #6b7280;
+      --bg: #f3f4f6;
+      --white: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid #e5e7eb;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .nav {
+      max-width: 1280px;
+      margin: auto;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--primary);
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      font-weight: 600;
+    }
+
+    nav ul li:hover { color: var(--primary); }
+
+    /* LAYOUT */
+    .container {
+      max-width: 1280px;
+      margin: 30px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 32px;
+    }
+
+    /* FEATURED */
+    .featured {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .featured img { width: 100%; height: 420px; object-fit: cover; }
+
+    .featured-content {
+      padding: 24px;
+    }
+
+    .badge {
+      color: var(--primary);
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+    }
+
+    .featured h1 {
+      font-size: 34px;
+      margin: 12px 0;
+    }
+
+    /* GRID */
+    .grid {
+      margin-top: 30px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform .2s ease;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card img { width: 100%; height: 180px; object-fit: cover; }
+
+    .card-content { padding: 16px; }
+
+    .card h3 { font-size: 18px; margin-bottom: 6px; }
+
+    .meta { font-size: 13px; color: var(--gray); }
+
+    /* SIDEBAR */
+    .sidebar section {
+      background: var(--white);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 24px;
+    }
+
+    .sidebar h2 { font-size: 20px; margin-bottom: 12px; }
+
+    .trending li {
+      padding: 10px 0;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 14px;
+    }
+
+    .ad {
+      height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #f9fafb;
+      border: 2px dashed #d1d5db;
+      font-size: 14px;
+      color: var(--gray);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #d1d5db;
+      padding: 40px 24px;
+      margin-top: 60px;
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+
+    footer h4 { color: #fff; margin-bottom: 10px; }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .container { grid-template-columns: 1fr; }
+      nav ul { display: none; }
+      .featured img { height: 260px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">NewsHubKE</div>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Politics</li>
+        <li>Entertainment</li>
+        <li>Sports</li>
+        <li>Investigations</li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+
+  <section>
+    <article class="featured">
+      <img src="https://via.placeholder.com/1200x600" alt="featured">
+      <div class="featured-content">
+        <span class="badge">Breaking News</span>
+        <h1>Major Political Shift Sends Shockwaves Across Kenya</h1>
+        <p class="meta">By NewsHubKE Desk • Today</p>
+        <p>Senior leaders held emergency meetings as unexpected developments changed the political landscape overnight.</p>
+      </div>
+    </article>
+
+    <div class="grid">
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250">
+        <div class="card-content">
+          <h3>Celebrity speaks after viral video</h3>
+          <p class="meta">Entertainment • 2 hours ago</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250">
+        <div class="card-content">
+          <h3>Police release official statement</h3>
+          <p class="meta">News • Today</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://via.placeholder.com/400x250">
+        <div class="card-content">
+          <h3>Kenyan club qualifies for continental finals</h3>
+          <p class="meta">Sports • Yesterday</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <aside class="sidebar">
+    <section>
+      <h2>Trending Now</h2>
+      <ul class="trending">
+        <li>Governor breaks silence after allegations</li>
+        <li>Top singer signs international deal</li>
+        <li>Fuel prices expected to change</li>
+        <li>University issues urgent notice</li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="ad">ADVERTISEMENT</div>
+    </section>
+  </aside>
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>About Us</h4>
+      <p>NewsHubKE is an independent digital newsroom delivering accurate, fast and impactful stories across Africa.</p>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <p>Privacy Policy<br>Terms & Conditions<br>Disclaimer</p>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <p>editor@newshubke.com</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
